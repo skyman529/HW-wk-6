@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 2;
+    border: none;
+}
+.card {
+    width: 100%;
+    color: white;
+    max-width: 420px;
+    padding: 2em;
+    border-radius: 30px;
+    border: none;
+    -webkit-text-stroke: .05px black;
+    margin: 2em;
+    margin-bottom: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url('https://source.unsplash.com/800x450/?weather,rain');
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .temperature {
+
+
+}

@@ -1,4 +1,21 @@
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Stop rain";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play rain";
+  }
+}
 // step one grab relavent html element
+
 var submitbtnEl = $("#searchbtn")
 // the logic of the fucntion that i will want to occur
 // add event listener to connect the function so it happens
@@ -7,7 +24,7 @@ submitbtnEl.click(getWeatherdata)
   function getWeatherdata() {
     var inputEl = $("#input")
     var city= inputEl.val()
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e5a600330dcc1a04f3349222a9a1a298`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=e5a600330dcc1a04f3349222a9a1a298`)
   .then(response => response.json())
   .then(response => 
     {
